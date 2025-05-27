@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Tools Arsenal</title>
+      <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" style="display: flex; align-items: center;">
+        <img src="logo.jpg" alt="FutureHackers Logo">
+        <span id="logo-name" style="font-size: larger; color: azure; font-weight: 760;">Future <span
+            style="color: cyan;">Hackers</span></span>
+      </a>
+    </div>
+    <ul class="nav-links">
+  <li><a href="index.html" >Home <i class="fas fa-house"></i></a></li>
+  <li><a href="certification.html">Certification <i class="fas fa-certificate"></i></a></li>
+  <li><a href="tools.html" class="current">Tools <i class="fas fa-toolbox"></i></a></li>
+  <li><a href="learning.html">Learning <i class="fas fa-graduation-cap"></i></a></li>
+  <li><a href="resources.html">Resources <i class="fas fa-folder-open"></i></a></li>
+  <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+  <li></li>
+  <li></li>
+</ul>
+</nav>
+    <div class="min-h-screen">
+        <!-- Hero section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Cybersecurity Tools Arsenal</h1>
+                <p>Discover professional-grade cybersecurity tools used by ethical hackers and security experts to protect systems and identify vulnerabilities.</p>
+                
+                <!-- Search and Filter -->
+                <div class="search-filter">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search for tools..." id="searchInput">
+                        <span class="search-icon">🔍</span>
+                    </div>
+                    
+                    <div class="category-filter">
+                        <select id="categorySelect">
+                            <option value="all">All Tools</option>
+                            <option value="web">Web Security</option>
+                            <option value="network">Network Analysis</option>
+                            <option value="system">System Tools</option>
+                            <option value="password">Password Tools</option>
+                            <option value="forensics">Digital Forensics</option>
+                            <option value="malware">Malware Analysis</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools Grid -->
+        <div class="tools-grid">
+            <!-- Existing Tools -->
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">🔍</div>
+                <h3>Burp Suite</h3>
+                <p>An integrated platform for performing security testing of web applications with advanced capabilities for finding vulnerabilities.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://portswigger.net/burp" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">📡</div>
+                <h3>Wireshark</h3>
+                <p>The world's foremost network protocol analyzer for security analysis, troubleshooting and optimization.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://www.wireshark.org" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="system">
+                <div class="tool-icon">🛡️</div>
+                <h3>Metasploit</h3>
+                <p>The world's most used penetration testing framework that helps verify vulnerabilities and manage security assessments.</p>
+                <div class="tool-footer">
+                    <span class="difficulty expert">Expert</span>
+                    <a href="https://www.metasploit.com" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">🌐</div>
+                <h3>nmap</h3>
+                <p>A free and open-source network scanner designed for security auditing and discovering hosts and services on a network.</p>
+                <div class="tool-footer">
+                    <span class="difficulty beginner">Beginner</span>
+                    <a href="https://nmap.org" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="system">
+                <div class="tool-icon">💻</div>
+                <h3>Kali Linux</h3>
+                <p>An advanced penetration testing Linux distribution used for penetration testing, ethical hacking, and security research.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://www.kali.org" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="password">
+                <div class="tool-icon">🔑</div>
+                <h3>John the Ripper</h3>
+                <p>A free password cracking software tool initially developed for Unix-based systems to detect weak passwords.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://www.openwall.com/john/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <!-- New Tools -->
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">🕷️</div>
+                <h3>OWASP ZAP</h3>
+                <p>One of the world's most popular free security tools, actively maintained by a dedicated international team of volunteers.</p>
+                <div class="tool-footer">
+                    <span class="difficulty beginner">Beginner</span>
+                    <a href="https://www.zaproxy.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="password">
+                <div class="tool-icon">⚡</div>
+                <h3>Hashcat</h3>
+                <p>The world's fastest and most advanced password recovery utility, supporting five unique modes of attack for over 300 highly-optimized hashing algorithms.</p>
+                <div class="tool-footer">
+                    <span class="difficulty expert">Expert</span>
+                    <a href="https://hashcat.net/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="forensics">
+                <div class="tool-icon">🔎</div>
+                <h3>Autopsy</h3>
+                <p>The premier end-to-end open source digital forensics platform. Analyze hard drives, smartphones, and other devices to recover evidence.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://www.autopsy.com/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="malware">
+                <div class="tool-icon">🦠</div>
+                <h3>Ghidra</h3>
+                <p>A software reverse engineering framework developed by NSA for analyzing malicious code and malware like viruses.</p>
+                <div class="tool-footer">
+                    <span class="difficulty expert">Expert</span>
+                    <a href="https://ghidra-sre.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="network">
+                <div class="tool-icon">📶</div>
+                <h3>Aircrack-ng</h3>
+                <p>Complete suite of tools to assess WiFi network security, including packet capture and export of data to text files for further processing.</p>
+                <div class="tool-footer">
+                    <span class="difficulty expert">Expert</span>
+                    <a href="https://www.aircrack-ng.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="web">
+                <div class="tool-icon">💉</div>
+                <h3>SQLmap</h3>
+                <p>Automatic SQL injection and database takeover tool that comes with a powerful detection engine and many niche features for the ultimate penetration tester.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://sqlmap.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="forensics">
+                <div class="tool-icon">💽</div>
+                <h3>Volatility</h3>
+                <p>Advanced memory forensics framework for incident response and malware analysis, with the capability to analyze RAM dumps.</p>
+                <div class="tool-footer">
+                    <span class="difficulty expert">Expert</span>
+                    <a href="https://www.volatilityfoundation.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="malware">
+                <div class="tool-icon">🔬</div>
+                <h3>Cuckoo Sandbox</h3>
+                <p>Leading open-source automated malware analysis system. Submit files to analyze their behavior in an isolated environment.</p>
+                <div class="tool-footer">
+                    <span class="difficulty expert">Expert</span>
+                    <a href="https://cuckoosandbox.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="system">
+                <div class="tool-icon">🔒</div>
+                <h3>Snort</h3>
+                <p>Open-source intrusion prevention system capable of real-time traffic analysis and packet logging on IP networks.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://www.snort.org/" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+
+            <div class="tool-card" data-category="password">
+                <div class="tool-icon">🔓</div>
+                <h3>Hydra</h3>
+                <p>Fast and flexible network logon cracker which supports numerous protocols to attack. Very fast and flexible password cracker.</p>
+                <div class="tool-footer">
+                    <span class="difficulty intermediate">Intermediate</span>
+                    <a href="https://github.com/vanhauser-thc/thc-hydra" target="_blank" class="tool-link">Open Tool ↗</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Search and filter functionality
+        const searchInput = document.getElementById('searchInput');
+        const categorySelect = document.getElementById('categorySelect');
+        const toolCards = document.querySelectorAll('.tool-card');
+
+        function filterTools() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const selectedCategory = categorySelect.value;
+
+            toolCards.forEach(card => {
+                const title = card.querySelector('h3').textContent.toLowerCase();
+                const description = card.querySelector('p').textContent.toLowerCase();
+                const category = card.dataset.category;
+
+                const matchesSearch = title.includes(searchTerm) || description.includes(searchTerm);
+                const matchesCategory = selectedCategory === 'all' || category === selectedCategory;
+
+                if (matchesSearch && matchesCategory) {
+                    card.style.display = 'block';
+                    card.style.animation = 'fadeIn 0.5s ease forwards';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        searchInput.addEventListener('input', filterTools);
+        categorySelect.addEventListener('change', filterTools);
+    </script>
+</body>
+</html>
