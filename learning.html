@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Hackers | Learning</title>
+  <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+     <nav class="navbar">
+    <div class="logo">
+      <a href="index.html" style="display: flex; align-items: center;">
+        <img src="logo.jpg" alt="FutureHackers Logo">
+        <span id="logo-name" style="font-size: larger; color: azure; font-weight: 760;">Future <span
+            style="color: cyan;">Hackers</span></span>
+      </a>
+    </div>
+    <ul class="nav-links">
+  <li><a href="index.html">Home <i class="fas fa-house"></i></a></li>
+  <li><a href="certification.html" >Certification <i class="fas fa-certificate"></i></a></li>
+  <li><a href="tools.html">Tools <i class="fas fa-toolbox"></i></a></li>
+  <li><a href="learning.html" class="current">Learning <i class="fas fa-graduation-cap"></i></a></li>
+  <li><a href="resources.html">Resources <i class="fas fa-folder-open"></i></a></li>
+  <li><a href="contact.html">Contact <i class="fas fa-envelope"></i></a></li>
+  <li></li>
+  <li></li>
+</ul>
+</nav>
+
+  <!-- Sidebar for Topics -->
+  <div class="sidebar" style="padding-top: 100px;">
+  <h2>Topics</h2>
+  <ul style="list-style-type: none; padding: 0;">
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/wQG1YK9XWe4')">Types of Hackers</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/n0bMkd8ES20')">Kali Linux Installation</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/8Znuctpj62c')">Linux Basic Commands (Theory)</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/TEzA9t8jka0')">Linux Basic Commands (Practical)</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/msr7MjJiRKY')">OWASP Top 10</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/v74nxf-HZfc')">Hacker Methodology</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/savDspmWqJA')">Kali Under Cover Mode</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/FVY6A1WGrCY')">CIA Triad</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/ECsyC_U5824')">Steganography (Theory)</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/u5rIGtcEouU')">Steganography (Practical)</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/r-ALuAYBLm4')">Credential Harvesting</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/B4J4rnvaX_8')">Information Security</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/J89gTQjU3VI')">VMware Uninstallation</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/k-Gl8esTMuY')">VMware Installation</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/Vz1UPqp7EY')">Parrot OS Installation on VMware</a></li>
+    <li><a href="#" onclick="loadVideo('https://www.youtube.com/embed/dbo1EiklNVo')">Classification of Attacks</a></li>
+  </ul>
+</div>
+
+<div class="content">
+  <div class="video-container">
+    <div class="loading-spinner" id="loading"></div>
+    <iframe 
+      id="videoPlayer" 
+      src="https://www.youtube.com/embed/pHlE1kr1-jI"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <div class="info-box">
+    <p>
+      If you need more content like this, visit our YouTube Channel 
+      <a href="https://www.youtube.com/@Future_Hackers" target="_blank" rel="noopener noreferrer">
+        Future Hackers
+      </a>
+    </p>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Future Hackers. All rights reserved.</p>
+</footer>
+
+<script>
+  function loadVideo(url) {
+    const player = document.getElementById("videoPlayer");
+    const loading = document.getElementById("loading");
+
+    loading.style.display = "block";
+    player.style.opacity = "0";
+    player.src = url;
+
+    player.onload = () => {
+      loading.style.display = "none";
+      player.style.opacity = "1";
+    };
+  }
+</script>
